@@ -97,7 +97,7 @@ export default class WelcoemPage extends React.Component {
           <Doughnut data={genderGraph} />
         </div>
         <div style={{marginTop: '40px'}}>
-          <BootstrapTable ref='table' data={namiData} version='4' pagination>
+          <BootstrapTable ref='table' data={namiData} version='4' pagination search>
             {columns.map((key, i) => {
               return <TableHeaderColumn key={i} isKey={i === 0} dataField={key} sortFunc={this.handleSort} dataSort>{key.replace('entries_', '').replace('_', ' ').capitalize()}</TableHeaderColumn>;
             })}
