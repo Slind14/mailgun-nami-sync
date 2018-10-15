@@ -23,6 +23,7 @@ export default class WelcoemPage extends React.Component {
         'entries_vorname',
         'entries_nachname',
         'entries_email',
+        'entries_emailVertretungsberechtigter',
         'entries_eintrittsdatum',
         'entries_geburtsDatum',
         'entries_geschlecht',
