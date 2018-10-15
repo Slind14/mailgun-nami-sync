@@ -69,7 +69,6 @@ export default class WelcoemPage extends React.Component {
       const genderGraph = this.state.genderGraph;
       const gd = [0,0];
       data.forEach(e => {
-        console.log(e);
         if (e.entries_geschlecht === genderGraph.labels[0]) {
           gd[0] = ++gd[0];
         } else if (e.entries_geschlecht === genderGraph.labels[1]) {
@@ -91,8 +90,6 @@ export default class WelcoemPage extends React.Component {
 
   render(){
     const { namiData, columns, genderGraph } = this.state;
-    console.log('genderGraph', genderGraph);
-    console.log('namiData', namiData);
     return (
       <Paper style={{maxHeight: "calc(100vh - 64px)", overflow: 'auto'}}>
       <div style={{margin: '40px'}}>
